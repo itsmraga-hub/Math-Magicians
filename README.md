@@ -16,10 +16,19 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 To get a local copy up and running follow these simple example steps.
+
+- Open your terminal and navigate to desired folder.
+
+- Clone the project from the repo `git clone https://github.com/itsmraga-hub/Math-Magicians.git`
+
+- Change directory to Math Mmagicians folder `cd Math-Magicians`.
+
+- To start the project on local web server, run `npm start`.
+
+  - After this you should be able to see the project on your browser, if not open your browser and visit [http://localhost:3000/](http://localhost:3000/) to view the project.
+
+- To run the available tests, run `npm test`.
 
 ### Prerequisites
 
