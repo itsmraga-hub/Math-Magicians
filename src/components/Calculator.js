@@ -1,36 +1,57 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
-// eslint-disable-next-line react/prefer-stateless-function
+import ButtonPrimary from './ButtonPrimary';
+import ButtonSecondary from './ButtonSecondary';
+import Screen from './Screen';
+
 export default class CalculatorComponent extends React.Component {
-  // eslint-disable-next-line no-useless-constructor
+  digits = '';
+
   constructor(props) {
     super(props);
+    this.state = {
+      value: '',
+    };
+  }
+
+  updateScreen = () => {
+    this.setState({ value: this.digits });
+  }
+
+  getButtonValue = (e) => {
+    const digit = e.target.innerText;
+    this.digits += digit;
+    const ans = calculate({}, digit);
+    console.log(ans);
+    this.updateScreen();
   }
 
   render() {
+    const { value } = this.state;
     return (
       <div className="calculatorContainer">
-        <span className="grid-span-full grid-item screen" />
-        <span className="grid-span-full grid-item screen" />
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">AC</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">+/-</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">%</button>
-        <button type="button" className="btn btn-secondary grid-item" data-id="" data-attribute="">÷</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">7</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">8</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">9</button>
-        <button type="button" className="btn btn-secondary grid-item" data-id="" data-attribute="">x</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">4</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">5</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">6</button>
-        <button type="button" className="btn btn-secondary grid-item" data-id="" data-attribute="">-</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">1</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">2</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">3</button>
-        <button type="button" className="btn btn-secondary grid-item" data-id="" data-attribute="">+</button>
-        <button type="button" className="btn btn-primary grid-item span-2" data-id="" data-attribute="">0</button>
-        <button type="button" className="btn btn-primary grid-item" data-id="" data-attribute="">.</button>
-        <button type="button" className="btn btn-secondary grid-item" data-id="" data-attribute="">=</button>
+        <Screen value="" />
+        <Screen value={value} />
+        <ButtonPrimary name="AC" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="+/-" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="%" getButtonValue={this.getButtonValue} />
+        <ButtonSecondary name="÷" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="7" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="8" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="9" getButtonValue={this.getButtonValue} />
+        <ButtonSecondary name="x" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="4" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="5" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="6" getButtonValue={this.getButtonValue} />
+        <ButtonSecondary name="-" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="1" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="2" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="3" getButtonValue={this.getButtonValue} />
+        <ButtonSecondary name="+" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="0" getButtonValue={this.getButtonValue} />
+        <ButtonPrimary name="." getButtonValue={this.getButtonValue} />
+        <ButtonSecondary name="=" getButtonValue={this.getButtonValue} />
       </div>
     );
   }
