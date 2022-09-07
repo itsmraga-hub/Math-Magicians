@@ -39,12 +39,17 @@ body {
 
 .calculatorContainer .screen {
   display: block;
-  height: 4em;
+  padding: 0.5em;
+  color: #fff;
+  text-align: right;
+  font-size: 2em;
+  height: 2em;
   background-color: gray;
 }
 
 .calculatorContainer .btn {
-  padding: 1em;
+  font-size: 2em;
+  padding: 0.5em;
   border: 0.1em solid rgba(128, 128, 128, 0.315);
 }
 
@@ -56,8 +61,16 @@ body {
   background-color: rgba(128, 128, 128, 0.055);
 }
 
+.calculatorContainer .btn-primary:hover {
+  background-color: orange;
+}
+
 .calculatorContainer .btn-secondary {
   background-color: orange;
+}
+
+.calculatorContainer .btn-secondary:hover {
+  background-color: rgba(128, 128, 128, 0.171);
 }
 
 @media (min-width: 768px) {
@@ -70,6 +83,6 @@ body {
   }
 
   .calculatorContainer .btn {
-    padding: 2em;
+    padding: 1em;
   }
 }
