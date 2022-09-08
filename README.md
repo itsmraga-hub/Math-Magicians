@@ -40,15 +40,19 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
+- To run the available tests, run `npm test`.
+
 ### Deployment
+
+- Deployed to github pages.
 
 ## Author
 
 👤 **William Raga**
 
-- GitHub: [@githubhandle](https://github.com/itsmraga-hub)
-- Twitter: [@twitterhandle](https://twitter.com/RagaMacharia)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/itsmraga/)
+- GitHub: [@WilliamRaga](https://github.com/itsmraga-hub)
+- Twitter: [@WilliamRaga](https://twitter.com/RagaMacharia)
+- LinkedIn: [@WilliamRaga](https://linkedin.com/in/itsmraga/)
 
 ## 🤝 Contributing
 
@@ -62,7 +66,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Microverse
 - Inspiration
 - etc
 
