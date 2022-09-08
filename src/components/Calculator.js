@@ -11,7 +11,9 @@ export default class CalculatorComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
+      total: '',
+      next: '',
+      operation: '',
     };
   }
 
@@ -19,20 +21,22 @@ export default class CalculatorComponent extends React.Component {
     this.setState({ value: this.digits });
   }
 
+  updateScreenAnswer = (obj) => {
+    this.setState(obj);
+  }
+
   getButtonValue = (e) => {
     const digit = e.target.innerText;
-    this.digits += digit;
-    const ans = calculate({}, digit);
-    console.log(ans);
-    this.updateScreen();
+    const calculator = calculate(this.state, digit);
+    this.updateScreenAnswer(calculator);
   }
 
   render() {
-    const { value } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="calculatorContainer">
-        <Screen value="" />
-        <Screen value={value} />
+        <Screen value={total || ''} />
+        <Screen value={next || operation || ''} />
         <ButtonPrimary name="AC" getButtonValue={this.getButtonValue} />
         <ButtonPrimary name="+/-" getButtonValue={this.getButtonValue} />
         <ButtonPrimary name="%" getButtonValue={this.getButtonValue} />
