@@ -41,7 +41,10 @@ body {
   display: block;
   padding: 0.5em;
   color: #fff;
-  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
   font-size: 2em;
   height: 2em;
   background-color: gray;
@@ -79,7 +82,7 @@ body {
   }
 
   .calculatorContainer .screen {
-    height: 6em;
+    height: 3em;
   }
 
   .calculatorContainer .btn {
