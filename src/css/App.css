@@ -38,7 +38,6 @@ body {
 }
 
 .calculatorContainer .screen {
-  display: block;
   padding: 0.5em;
   color: #fff;
   display: flex;
