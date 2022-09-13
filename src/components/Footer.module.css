@@ -1,0 +1,38 @@
+.footerContainer {
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.heroText {
+  font-size: 2em;
+}
+
+.hero {
+  color: crimson;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.socialsContainer {
+  display: flex;
+  list-style: none;
+}
+
+.socialsContainer li {
+  padding: 1em 2em;
+}
+
+.socialsContainer li svg {
+  width: 2em;
+}
+
+.socialsContainer li svg path {
+  fill: rgb(33, 33, 116);
+}
