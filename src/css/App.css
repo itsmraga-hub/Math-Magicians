@@ -8,6 +8,7 @@
 
 body {
   height: 100vh;
+  width: 100vw;
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
@@ -15,14 +16,15 @@ body {
 #root {
   width: 100%;
   height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#root .container {
-  padding: 1em;
-  width: 60%;
 }
 
 .calculatorContainer {
@@ -76,8 +78,17 @@ body {
 }
 
 @media (min-width: 768px) {
-  #root .container {
-    width: 30%;
+  .container {
+    justify-content: space-between;
+    padding: 10em 10em 0 4em;
+  }
+
+  .container .welcomeContainer {
+    align-self: flex-start;
+  }
+
+  .calculatorContainer {
+    width: 50em;
   }
 
   .calculatorContainer .screen {
