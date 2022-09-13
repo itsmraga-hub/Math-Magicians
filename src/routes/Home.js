@@ -1,5 +1,6 @@
 // This eslint disable is for the p element
 /* eslint-disable max-len */
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import style from './Home.module.css';
 
@@ -16,6 +17,7 @@ const HomeDisplay = () => (
 
       </p>
     </div>
+    <Footer />
   </>
 );
 

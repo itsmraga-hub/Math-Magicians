@@ -3,6 +3,7 @@ import './css/App.css';
 
 import CalculatorComponent from './components/Calculator';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends React.Component {
@@ -16,6 +17,7 @@ export default class App extends React.Component {
           </div>
           <CalculatorComponent />
         </div>
+        <Footer />
       </>
     );
   }
