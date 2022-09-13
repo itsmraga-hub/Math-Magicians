@@ -3,11 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class ButtonPrimary extends React.PureComponent {
-  // getButtonValue = (e) => {
-  //   console.log(e.target.innerText);
-  //   return e.target.innerText;
-  // }
-
   render() {
     const { name, getButtonValue } = this.props;
     return (
