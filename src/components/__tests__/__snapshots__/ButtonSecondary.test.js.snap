@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonSecondary /> Renders properly 1`] = `
+<button
+  className="btn btn-secondary grid-item"
+  data-attribute=""
+  data-id=""
+  onClick={[Function]}
+  type="button"
+>
+  =
+</button>
+`;

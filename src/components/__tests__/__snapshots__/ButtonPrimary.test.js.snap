@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonPrimary /> Renders properly 1`] = `
+<button
+  className="btn btn-primary grid-item null"
+  data-attribute=""
+  data-id=""
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
