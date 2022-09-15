@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Renders properly 1`] = `
+<header
+  className="headerContainer"
+>
+  <a
+    className="logo"
+    href="###"
+  >
+    Math Magicians
+  </a>
+  <ul
+    className="navLinksContainer"
+  >
+    <li
+      className="navLink"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="navLink"
+    >
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li
+      className="navLink"
+    >
+      <a
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </li>
+  </ul>
+</header>
+`;

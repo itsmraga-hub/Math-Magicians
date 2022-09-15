@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Renders properly 1`] = `
+<span
+  className="grid-span-full grid-item screen"
+>
+  1234
+</span>
+`;
