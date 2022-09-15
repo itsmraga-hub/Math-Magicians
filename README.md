@@ -14,7 +14,7 @@
 
 - Deployed to Netlify. Click below link to visit.
 
-[Live Link](https://fanciful-math-magicians.netlify.app/)
+- [Live Link](https://fanciful-math-magicians.netlify.app/)
 
 ## Getting Started
 
