@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import style from './Header.module.css';
 
+// Removed Router for deployment
 const Header = () => (
   <header className={style.headerContainer}>
     <a href="###" className={style.logo}>Math Magicians</a>
