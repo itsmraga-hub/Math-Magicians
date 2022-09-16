@@ -23,6 +23,7 @@ body {
   height: 100%;
   padding: 1em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -77,6 +78,7 @@ body {
 
 @media (min-width: 768px) {
   .container {
+    flex-direction: row;
     justify-content: space-between;
     padding: 10em 10em 0 4em;
   }
